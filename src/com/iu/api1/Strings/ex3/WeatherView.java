@@ -1,6 +1,4 @@
-package com.iu.api1.Strings;
-
-import com.iu.api1.Strings.ex3.WeatherDTO;
+package com.iu.api1.Strings.ex3;
 
 public class WeatherView {
 
@@ -13,7 +11,7 @@ public class WeatherView {
 	
 	
 	public void view(WeatherDTO [] datas) {
-		for (int i =0; i<datas.length; i++) {
+		for(int i=0;i<datas.length;i++) {
 			this.view(datas[i]);
 		}
 		
