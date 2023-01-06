@@ -29,7 +29,9 @@ public class StringEx2 {
 			}
 			
 		}
-	System.out.println("비정상");
+		if(flag) {
+			System.out.println("비정상 파일입니다");
+		}
 
 		
 		System.out.println("Finish");
