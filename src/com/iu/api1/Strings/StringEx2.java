@@ -9,12 +9,6 @@ public class StringEx2 {
 		String [] names = {"jpg", "jpeg", "gif", "png"};
 		System.out.println("파일명을 입력");
 		String fileName = sc.next();
-		
-		for(int i =0; i<names.length; i++) {
-			System.out.println(i);
-			if(iu == fileName.substring(i)) {
-				System.out.println(i);
-			}
 			
 		}
 		
@@ -26,6 +20,6 @@ public class StringEx2 {
 		
 		
 	}
-	}
+	
 
 
