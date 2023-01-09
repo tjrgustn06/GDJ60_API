@@ -42,6 +42,8 @@ public class WeatherController {
 			weatherView.view(weatherDTOs);
 			break;
 		case 3:
+			WeatherDTO weatherDTO = weatherInput.search(weatherDTOs);
+			
 			System.out.println("지역날씨 검색");
 			break;
 		case 4:
