@@ -1,5 +1,7 @@
 package com.iu.api2.collections.ex1;
 
+
+
 public class Ex1Main {
 
 	public static void main(String[] args) {
@@ -10,8 +12,11 @@ public class Ex1Main {
 		//4.학생정보 추가
 		//5.학생정보삭제(이름)
 		//6.프로그램 종료
-		 
-
+		
+		StudentDAO studentDAO = new StudentDAO();
+		Controller.Start();
+		
+		
 	}
 
 }
