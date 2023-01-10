@@ -12,19 +12,11 @@ public class StringEx2 {
 		
 		for(int i =0; i<names.length; i++) {
 			System.out.println(i);
-			if(iu == fileName.substring(i)) {
+			if(fileName == fileName.substring(i)) {
 				System.out.println(i);
 			}
 			
 		}
-		
-		
-		
-		
-		
-		
-		
-		
 	}
 	}
 
