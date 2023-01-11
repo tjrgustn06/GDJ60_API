@@ -1,5 +1,8 @@
 package com.iu.api2.collections.ex1;
 
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.StringTokenizer;
@@ -19,6 +22,22 @@ public class StudentDAO {
 		sb.append("choa, 4, 71, 25, 99 ");
 		
 		
+	}
+	public void backup (StudentDAO studentDAO) {
+		//학생정보 백업
+		//현재시간을 파일명으로 해서 파일 작성 MS로 만들어서 
+		
+	File file = new File("C:\\filetest","Student.txt");
+	while(true) {
+	try {
+		FileWriter fw = new FileWriter(file,true);
+		fw.write(this.sb+"\r\n");
+		fw.flush();
+	} catch (IOException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	}
 	}
 		//학생정보 초기화
 	public ArrayList<StudentDTO> init() {

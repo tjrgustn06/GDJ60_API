@@ -29,7 +29,8 @@ public class StudentController {
 			System.out.println("3. 학생정보검색조회");
 			System.out.println("4. 학생정보추가");
 			System.out.println("5. 학생정보삭제");
-			System.out.println("6. 프로그램 종료");
+			System.out.println("6. 학생정보백업");
+			System.out.println("7. 프로그램 종료");
 			System.out.println();
 			int select = sc.nextInt();
 			switch (select) {
@@ -44,7 +45,7 @@ public class StudentController {
 				if(studentDTO != null) {
 					studentView.view(studentDTO);
 				}else {
-					studentView.view("찾는 학생이 없다");
+					studentView.view("찾는 학생이 없습니다");
 				}				
 				break;
 			case 4:
@@ -57,11 +58,12 @@ public class StudentController {
 				}else {
 					studentView.view("삭제 실패");
 				}
+			case 6:
+				studentDAO.backup(studentDAO);
 				break;
 				default:
 					check=false;
-				
-				
+					break;
 			}
 		}
 		
